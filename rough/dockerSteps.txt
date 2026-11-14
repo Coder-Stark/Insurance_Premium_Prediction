@@ -1,0 +1,21 @@
+1. setup Docker 
+    install Docker
+    create account on docker hub
+
+2. Creat a docker file
+3. Build the docker image
+4. Login to Docker hub
+5. Push the image to docker hub
+6. pull the docker image
+7. run the docker image locally
+
+
+//Commands
+-> docker build -t shivamkrrajbhar/insurance-premium-api .
+-> docker login 
+-> docker push shivamkrrajbhar/insurance-premium-api
+
+#pull from docker hub
+-> docker pull shivamkrrajbhar/insurance-premium-api
+#run on machine
+-> docker run -d -p 8000:8000 --name insurance-api shivamkrrajbhar/insurance-premium-api:latest
